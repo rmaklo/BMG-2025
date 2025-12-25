@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Message Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font pour Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Message Generator</h1>
+        
+        <div class="inputs">
+            <h3>Entre tes textes :</h3>
+            <input type="text" id="texte1" placeholder="Heure d'envoie">
+            <input type="text" id="texte2" placeholder="Ligne de bus - Envoie">
+            <input type="text" id="texte3" placeholder="Ligne de bus - Réception">
+            <input type="text" id="texte4" placeholder="Date du jour">
+            <input type="text" id="texte5" placeholder="Heure de début">
+            <input type="text" id="texte6" placeholder="Heure de fin (+1)">
+        </div>
+        
+        <div class="buttons">
+            <button id="generer-btn">Générer le BMG</button>
+            <button id="telecharger-btn" class="download-btn">Télécharger l'image</button>
+        </div>
+        
+        <canvas id="monCanvas" width="828" height="1792"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
