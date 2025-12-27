@@ -12,38 +12,38 @@ img.src = 'template-sms.png'; // 👈 CHANGE LE NOM DE TON IMAGE ICI
 const zones = [
     {
         id: 'texte1',
-        x: 337,  // Position X depuis Figma
-        y: 398,  // Position Y depuis Figma
+        x: 332,  // Position X depuis Figma
+        y: 393,  // Position Y depuis Figma
         style: 'P2'
     },
     {
         id: 'texte2',
-        x: 664,
-        y: 460,
+        x: 662,
+        y: 455,
         style: 'P1'
     },
     {
         id: 'texte3',
-        x: 374,
-        y: 555,
+        x: 370,
+        y: 549,
         style: 'P1'
     },
     {
         id: 'texte4',
-        x: 103,
-        y: 691,
+        x: 106,
+        y: 686,
         style: 'P1'
     },
     {
         id: 'texte5',
-        x: 291,
-        y: 691,
+        x: 294,
+        y: 686,
         style: 'P1'
     },
     {
         id: 'texte6',
-        x: 393,
-        y: 691,
+        x: 396,
+        y: 686,
         style: 'P1'
     }
 ];
@@ -64,13 +64,13 @@ img.onerror = function() {
 function appliquerStyle(ctx, style) {
     // Style P1 : Blanc 28px
     if (style === 'P1') {
-        ctx.font = '26px Inter';
+        ctx.font = '27px Inter';
         ctx.fillStyle = 'white';
         ctx.textBaseline = 'top'; // Pour matcher les coordonnées Figma
     } 
     // Style P2 : Gris 23px
     else if (style === 'P2') {
-        ctx.font = '22px Inter';
+        ctx.font = '23px Inter';
         ctx.fillStyle = '#929197';
         ctx.textBaseline = 'top'; // Pour matcher les coordonnées Figma
     }
