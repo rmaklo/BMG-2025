@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Google Sans Flex', Arial, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
@@ -50,7 +50,7 @@ input {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Google Sans Flex', sans-serif;
     transition: border-color 0.3s;
 }
 

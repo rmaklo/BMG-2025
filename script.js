@@ -5,47 +5,47 @@ let imageChargee = false;
 
 // Charger l'image template
 const img = new Image();
-img.src = 'template-sms.png'; // 👈 CHANGE LE NOM DE TON IMAGE ICI
+img.src = 'template-sms2.png'; // 👈 CHANGE LE NOM DE TON IMAGE ICI
 
 // Configuration des zones de texte
 // 👇 REMPLACE CES COORDONNÉES PAR CELLES QUE TU AS DANS FIGMA
 const zones = [
     {
         id: 'texte1',
-        x: 332,  // Position X depuis Figma
-        y: 393,  // Position Y depuis Figma
+        x: 792,  // Position X depuis Figma
+        y: 711,  // Position Y depuis Figma
         style: 'P2'
     },
     {
         id: 'texte2',
-        x: 662,
-        y: 455,
+        x: 389,
+        y: 843,
         style: 'P1'
     },
     {
         id: 'texte3',
-        x: 370,
-        y: 549,
+        x: 60,
+        y: 1030,
         style: 'P1'
     },
-    {
-        id: 'texte4',
-        x: 106,
-        y: 686,
-        style: 'P1'
-    },
-    {
-        id: 'texte5',
-        x: 294,
-        y: 686,
-        style: 'P1'
-    },
-    {
-        id: 'texte6',
-        x: 396,
-        y: 686,
-        style: 'P1'
-    }
+    // {
+    //    id: 'texte4',
+    //     x: 106,
+    //   y: 686,
+    // style: 'P1'
+    // },
+    // {
+    // id: 'texte5',
+    // x: 294,
+    // y: 686,
+    // style: 'P1'
+    // },
+    // {
+    //    id: 'texte6',
+    //    x: 396,
+    //    y: 686,
+    //    style: 'P1'
+    // }
 ];
 
 // Quand l'image est chargée
@@ -64,14 +64,14 @@ img.onerror = function() {
 function appliquerStyle(ctx, style) {
     // Style P1 : Blanc 28px
     if (style === 'P1') {
-        ctx.font = '27px Inter';
-        ctx.fillStyle = 'white';
+        ctx.font = '32px Google Sans Flex';
+        ctx.fillStyle = '#E7E8ED';
         ctx.textBaseline = 'top'; // Pour matcher les coordonnées Figma
     } 
     // Style P2 : Gris 23px
     else if (style === 'P2') {
-        ctx.font = '23px Inter';
-        ctx.fillStyle = '#929197';
+        ctx.font = '32px Google Sans Flex';
+        ctx.fillStyle = '#061439';
         ctx.textBaseline = 'top'; // Pour matcher les coordonnées Figma
     }
 }

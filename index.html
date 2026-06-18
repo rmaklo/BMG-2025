@@ -10,8 +10,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="theme-color" content="#667eea">
-    <!-- Google Font pour Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <!-- Google Font pour Google Sans Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -19,12 +21,12 @@
         
         <div class="inputs">
             <h3>Entre tes textes :</h3>
-            <input type="text" id="texte1" placeholder="Heure d'envoie">
-            <input type="text" id="texte2" placeholder="Ligne de bus - Envoie">
-            <input type="text" id="texte3" placeholder="Ligne de bus - Réception">
-            <input type="text" id="texte4" placeholder="Date du jour">
+            <input type="text" id="texte1" placeholder="Ligne de bus - Envoie">
+            <input type="text" id="texte2" placeholder="Ligne de bus - Réception">
+            <input type="text" id="texte3" placeholder="Date & heure">
+            <!--<input type="text" id="texte4" placeholder="Date du jour">
             <input type="text" id="texte5" placeholder="Heure de début">
-            <input type="text" id="texte6" placeholder="Heure de fin (+1)">
+            <input type="text" id="texte6" placeholder="Heure de fin (+1)">-->
         </div>
         
         <div class="buttons">
@@ -32,7 +34,7 @@
             <button id="telecharger-btn" class="download-btn">Télécharger l'image</button>
         </div>
         
-        <canvas id="monCanvas" width="828" height="1792"></canvas>
+        <canvas id="monCanvas" width="945" height="2048"></canvas>
     </div>
 
     <script src="script.js"></script>
